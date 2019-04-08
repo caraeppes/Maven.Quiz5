@@ -1,28 +1,30 @@
 package rocks.zipcode.io.quiz4.objectorientation;
 
+import rocks.zipcode.io.quiz4.fundamentals.StringEvaluator;
+
 /**
  * @author leon on 19/12/2018.
  */
 
-import rocks.zipcode.io.quiz4.fundamentals.StringEvaluator;
-
 public class StringEvaluatorObject {
 
     private String str;
+    private StringEvaluator stringEvaluator;
 
     public StringEvaluatorObject(String str) {
         this.str = str;
+        this.stringEvaluator = new StringEvaluator();
     }
 
     public String[] getAllSubstrings() {
-        return StringEvaluator.getAllSubstrings(str);
+        return stringEvaluator.getAllSubstrings(str);
     }
 
     public String[] getCommonSubstrings(String secondInput) {
-        return StringEvaluator.getCommonSubstrings(str, secondInput);
+        return stringEvaluator.getCommonSubstrings(str, secondInput);
     }
 
     public String getLargestCommonSubstring(String secondInput) {
-        return StringEvaluator.getLargestCommonSubstring(str, secondInput);
+        return stringEvaluator.getLargestCommonSubstring(str, secondInput);
     }
 }

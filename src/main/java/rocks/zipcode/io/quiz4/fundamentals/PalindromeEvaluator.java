@@ -1,9 +1,7 @@
 package rocks.zipcode.io.quiz4.fundamentals;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 import static rocks.zipcode.io.quiz4.fundamentals.StringEvaluator.getAllSubstrings;
 
